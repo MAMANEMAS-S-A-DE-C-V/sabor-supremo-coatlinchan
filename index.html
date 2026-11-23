@@ -483,6 +483,35 @@
       }
       .hours li.closed .h-days{font-weight:800}
 
+      /* ---------- Opiniones en Google ---------- */
+      .reviews-panel{
+        max-width:680px;margin:0 auto;text-align:center;
+        background:var(--card);border:2px solid var(--line);border-radius:26px;
+        padding:30px 26px;box-shadow:var(--shadow);
+      }
+      .reviews-score{
+        font-family:"Baloo 2",sans-serif;font-weight:800;
+        font-size:clamp(3rem,9vw,4.2rem);line-height:1;color:var(--navy);
+      }
+      @media (prefers-color-scheme: dark){.reviews-score{color:var(--ink)}}
+      .reviews-stars{
+        color:var(--gold);font-size:1.9rem;letter-spacing:.18em;line-height:1.2;margin-top:4px;
+      }
+      .reviews-count{font-weight:800;font-size:1.05rem;margin:6px 0 0}
+      .reviews-note{
+        color:var(--ink-soft);font-weight:600;max-width:520px;margin:14px auto 0;
+      }
+      .reviews-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+      .btn-map{
+        background:var(--navy);color:#fff;box-shadow:0 8px 22px rgba(11,42,107,.35);
+      }
+      .btn-map:hover{background:var(--navy-deep)}
+      .btn-map-line{
+        background:transparent;color:var(--navy);border:2.5px solid var(--navy);box-shadow:none;
+      }
+      @media (prefers-color-scheme: dark){.btn-map-line{color:var(--ink);border-color:var(--ink)}}
+      .btn-map-line:hover{background:var(--chip)}
+
       /* ---------- Preguntas frecuentes ---------- */
       .faq-list{max-width:760px;margin:0 auto;display:grid;gap:12px}
       .faq{
@@ -539,6 +568,7 @@
           <a href="#mayoreo">Mayoreo</a>
           <a href="#nosotros">Nosotros</a>
           <a href="#visitanos">Visítanos</a>
+          <a href="#opiniones">Opiniones</a>
           <a href="#preguntas">Preguntas</a>
           <a href="#contacto">Contacto</a>
           <a href="#sugerencias">Sugerencias</a>
@@ -858,6 +888,32 @@
             <li class="closed"><span class="h-days">Jueves</span><span class="h-time">Cerrado</span></li>
             <li><span class="h-days">Viernes a domingo</span><span class="h-time">11:30 am – 8:30 pm</span></li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= OPINIONES EN GOOGLE ======= -->
+    <section id="opiniones" style="padding-top:0" data-pane="inicio">
+      <div class="wrap">
+        <div class="sec-head rv rv-z">
+          <h2>Opiniones en Google ⭐</h2>
+          <p>Esto es lo que dice Google de nosotros, tal cual aparece en nuestro perfil. Si ya nos visitaste, tu reseña nos ayuda muchísimo.</p>
+        </div>
+        <div class="reviews-panel rv rv-z">
+          <p class="reviews-score" aria-label="Calificación: 5.0 de 5">5.0</p>
+          <p class="reviews-stars" aria-hidden="true">★★★★★</p>
+          <p class="reviews-count">de 5 reseñas en Google</p>
+          <p class="reviews-note">Quienes nos visitan destacan el sabor único de nuestros helados; el de nuez con queso es de los más mencionados.</p>
+          <div class="reviews-btns">
+            <a class="btn btn-map" href="https://maps.app.goo.gl/PqDGXipzL1zLxo2K6" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 1 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.8"/></svg>
+              Ver en Google Maps
+            </a>
+            <a class="btn btn-map-line" href="https://maps.app.goo.gl/MXRWjnsqe8j54L2Z6" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 8.8l6.1-.7z"/></svg>
+              Deja tu reseña
+            </a>
+          </div>
         </div>
       </div>
     </section>
